@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 120px;
+            height: 120px;
+            background-color:#6592CF ;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            position: relative;
+        }
+        .rectangle1,
+        .rectangle2,
+        .rectangle3,
+        .rectangle4,
+        .rectangle5,
+        .rectangle6,
+        .rectangle7 {
+            margin-top: 20px;
+            width: 7px;
+            height: 40px;
+            z-index: 1;
+            /* position: absolute; */
+        }
+
+        .rectangle1,
+        .rectangle3,
+        .rectangle5,
+        .rectangle7 {
+           
+            background-color:#060F55 ;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+         
+        .rectangle2,
+        .rectangle4,
+        .rectangle6 {
+           
+            background-color:#6592CF ;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        /* .halfcircle {
+             border-radius: 50% / 100% 100% 0 0;
+             background-color:#115506 ;
+             margin-top: 20px;
+             transform: rotate(180deg);
+             transform-origin: bottom;
+             position: absolute;
+             } */
+             .circle {
+                width: 49px;
+                height: 45px;
+                margin-top: 20px;
+                border-radius: 0 0 50% 50%;
+                background-color: #060F55;
+                transform: translate(0px,30px);
+                /* transform-origin: bottom; */
+                position: absolute;
+               
+             }
+             .rectangle8 {
+                margin-top: 20px;
+                width: 7px;
+                height: 40px;
+                background-color:#060F55 ;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                position: absolute;
+                transform: translate(0px,60px);
+                
+             }
+        
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="rectangle1"></div>
+        <div class="rectangle2"></div>
+        <div class="rectangle3"></div>
+        <div class="rectangle4"></div>
+        <div class="rectangle5"></div>
+        <div class="rectangle6"></div>
+        <div class="rectangle7"></div>
+        <!-- <div class="halfcircle"></div> -->
+        <div class="circle"></div>
+        <div class="rectangle8"></div>
+    </div>
+    
+</body>
+</html>
